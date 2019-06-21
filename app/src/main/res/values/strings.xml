@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Joke</string>
+    <string name="txt_category">Category:</string>
+    <string name="txt_error_occurred">An error occurred, please try again.</string>
+</resources>

@@ -1,0 +1,79 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "joke.chucknorris"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "BASE_URL", "\"https://api.chucknorris.io/\""
+        }
+        debug {
+            buildConfigField "String", "BASE_URL", "\"https://api.chucknorris.io/\""
+        }
+    }
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+}
+
+androidExtensions {
+    experimental = true
+}
+
+kapt {
+    generateStubs = true
+}
+
+dependencies {
+    Map<String, String> dependencies = rootProject.ext.dependencies
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation dependencies.supportAppCompact
+    implementation dependencies.androidKotlin
+    implementation dependencies.supportAppCompact
+    implementation dependencies.androidKtx
+    implementation dependencies.constraintLayout
+    implementation dependencies.constraintLayout
+    testImplementation dependencies.testJUnit
+    androidTestImplementation dependencies.testRunner
+    androidTestImplementation dependencies.testEspressoCore
+    //Dagger
+    kaptTest dependencies.daggerCompiler
+    kaptAndroidTest dependencies.daggerCompiler
+    kapt dependencies.daggerCompiler
+    testImplementation dependencies.dagger
+    kapt dependencies.daggerAndroidProcessor
+    implementation dependencies.dagger
+    implementation dependencies.daggerAndroid
+    implementation dependencies.daggerAndroidSupport
+    implementation dependencies.lifecycle
+    kapt dependencies.lifecycleCompiler
+    //Retrofit
+    implementation dependencies.squareConverterGson
+    implementation dependencies.squareLogging
+    implementation dependencies.squareOkHttp
+    implementation dependencies.squareRxAdapter
+    implementation dependencies.squareRetrofit
+    //Rx
+    implementation dependencies.rxJava
+    implementation dependencies.rxKotlin
+    implementation dependencies.rxAndroid
+    implementation dependencies.picasso
+    //test
+    testImplementation dependencies.mockk
+    testImplementation dependencies.testArchCore
+}

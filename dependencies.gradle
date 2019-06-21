@@ -1,0 +1,130 @@
+ext {
+    archTest = "2.0.1"
+    kotlin = '1.3.31'
+    supportAndroidx = '1.1.0-beta01'
+    supportDesign = '1.0.0-rc01'
+    supportBiometrics = '1.0.0-alpha04'
+    lottie = '3.0.6'
+    gson = '2.8.5'
+    espresso = '3.2.0'
+    test = '1.2.0'
+    junitExt = '1.1.1'
+    mockito = '2.28.2'
+    firebase = '16.0.9'
+    tagManagerVersion = '16.0.8'
+    firebaseConfig = '17.0.0'
+    firebaseMessage = '18.0.0'
+    firebaseCrash = '16.2.1'
+    firebaseIid = '17.0.4'
+    rxJava = '2.2.9'
+    rxKotlin = '2.0.0-RC1'
+    rxBinding = '1.0.1'
+    rxBinding2 = '2.2.0'
+    rxAndroid = '2.1.1'
+    pageIndicatorView = '1.0.3'
+    topSnackBar = '1.1.1'
+    circularImageView = '1.1'
+    mpaChart = 'v3.1.0'
+    observableScrollView = '1.6.0'
+    circularProgressView = '2.5.0'
+    materialDialog = '3.0.0-beta2'
+    canarinho = '1.2.0'
+    imageCropper = '2.8.0'
+    jUnit = '4.12'
+    playServices = '17.1.2'
+    zopim = '1.4.2'
+    slf4j = '2.0.0-alpha0'
+    logBack = '2.0.0'
+    multiDex = '2.0.1'
+    spek = '1.0.25'
+    mockitoKotlin = '1.6.0'
+    conditionWatcher = '0.2'
+    testButler = '2.0.0'
+    amplitude = '2.23.0'
+    buddyBuild = '0.0.59@aar'
+    seismic = '1.0.2'
+
+    retrofit = '2.6.0'
+    okHttp3 = '4.0.0-alpha02'
+    squareConverterGson = '2.6.0'
+
+    mockWebServer = '3.8.0'
+    androidArchitecture = '2.1.0-alpha02'
+    dataBinding = '2.3.1'
+    hamkrest = '1.7.0.0'
+    timber = '4.7.1'
+    dagger = '2.23.1'
+    constraintLayoutVersion = '2.0.0-alpha5'
+    crashlyticsVersion = '2.10.1'
+
+    rxPermission = '0.9.5@aar'
+    compressor = '2.1.0'
+    glide = '4.9.0'
+
+    faker = '1.2.8'
+    commonsIo = '2.6'
+    rxIdler = '0.9.1'
+
+    appsFlyerVersion = '4.10.0'
+    referrerVersion = '1.0'
+
+    storoVersion = '1.0.3'
+    paperTrailVersion = '1.0.0'
+
+    materialProgressVersion = '1.6.1'
+    viewModelVersion = '1.1.1'
+    androidKtxVersion = '1.1.0-alpha03'
+    mockkVersion = '1.9.3'
+
+    salesforceVersion = '6.1.0'
+
+    flexbox = '1.1.0'
+    bubbleVersion = '1.2.0'
+    lifeCycleExtVersion = '2.0.0'
+    picassoVersion = '2.71828'
+
+    dependencies = [
+            androidKtx            : "androidx.core:core-ktx:$androidKtxVersion",
+            androidKotlin         : "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin",
+            support               : "androidx.legacy:legacy-support-v4:$supportAndroidx",
+            supportAppCompact     : "androidx.appcompat:appcompat:$supportAndroidx",
+            supportVectorDrawable : "androidx.vectordrawable:vectordrawable:$supportAndroidx",
+            supportCardView       : "androidx.cardview:cardview:$supportAndroidx",
+            supportDesign         : "com.google.android.material:material:$supportDesign",
+            supportV4             : "androidx.legacy:legacy-support-v4:$supportAndroidx",
+            supportAnnotations    : "androidx.annotation:annotation:$supportAndroidx",
+            supportMultiDex       : "androidx.multidex:multidex:$multiDex",
+            supportMedia          : "androidx.media:media:$supportAndroidx",
+            constraintLayout      : "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion",
+            testKotlin            : "org.jetbrains.kotlin:kotlin-test:$kotlin",
+            testEspressoCore      : "androidx.test.espresso:espresso-core:$espresso",
+            testEspressoIntents   : "androidx.test.espresso:espresso-intents:$espresso",
+            testEspressoContrib   : "androidx.test.espresso:espresso-contrib:$espresso",
+            testRules             : "androidx.test:rules:$test",
+            testRunner            : "androidx.test:runner:$test",
+            junitExt              : "androidx.test.ext:junit:$junitExt",
+            testJUnit             : "junit:junit:$jUnit",
+            testArchCore          : "androidx.arch.core:core-testing:$androidArchitecture",
+            testMockWebServer     : "com.squareup.okhttp3:mockwebserver:$mockWebServer",
+            rxJava                : "io.reactivex.rxjava2:rxjava:$rxJava",
+            rxKotlin              : "io.reactivex:rxkotlin:$rxKotlin",
+            rxAndroid             : "io.reactivex.rxjava2:rxandroid:$rxAndroid",
+            rxPermission          : "com.tbruyelle.rxpermissions2:rxpermissions:$rxPermission",
+            googleGson            : "com.google.code.gson:gson:$gson",
+            squareOkHttp          : "com.squareup.okhttp3:okhttp:$okHttp3",
+            squareRetrofit        : "com.squareup.retrofit2:retrofit:$retrofit",
+            squareRxAdapter       : "com.squareup.retrofit2:adapter-rxjava2:$retrofit",
+            squareConverterGson   : "com.squareup.retrofit2:converter-gson:$squareConverterGson",
+            squareLogging             : "com.squareup.okhttp3:logging-interceptor:$okHttp3",
+            daggerCompiler        : "com.google.dagger:dagger-compiler:$dagger",
+            dagger                : "com.google.dagger:dagger:$dagger",
+            daggerAndroid         : "com.google.dagger:dagger-android:$dagger",
+            daggerAndroidSupport  : "com.google.dagger:dagger-android-support:$dagger",
+            daggerAndroidProcessor: "com.google.dagger:dagger-android-processor:$dagger",
+            lifecycle             : "androidx.lifecycle:lifecycle-extensions:$androidArchitecture",
+            lifecycleCompiler     : "androidx.lifecycle:lifecycle-compiler:$androidArchitecture",
+            mockk                 : "io.mockk:mockk:$mockkVersion",
+            lifeCycleExt : "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifeCycleExtVersion",
+            picasso : "com.squareup.picasso:picasso:$picassoVersion"
+    ]
+}
